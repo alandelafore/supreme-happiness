@@ -103,6 +103,8 @@ def clientes():
         tabla = ListaCSV()
         # cargo el template clientes.html enviandole como parametro la tabla
         return render_template('clientes.html', archlist=tabla)
+    else:
+        return render_template('sin_permiso.html')
         
 
     
