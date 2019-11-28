@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Clientes {{ archlist }} {% endblock %}
+
+{% block page_content %}
+<div> 
+    <div class="container-fluid">
+        <table class="table table-bordered table-condensed" >
+            <tbody>
+                {% for linea in  archlist %}
+                    <tr class="active">                
+                        {% for item in  linea %}
+                        <td >{{item}}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
