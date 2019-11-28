@@ -15,13 +15,14 @@ app.config['SECRET_KEY'] = 'un string que funcione como llave'
 
 
 def ListaCSV():
-    with open('clientes.csv', 'r') as ventas:
+    # leo el archivo
+    with open('clientes.csv', 'r', encoding='utf-8') as ventas:
         leearch = csv.reader(ventas)
-        print ('HOLAAA')
+        # hago una lista a partir del reader
         archlist = list(leearch)
     return archlist
     
-    S
+
 @app.route('/')
 def index():
     return render_template('index.html', fecha_actual=datetime.utcnow())
@@ -100,7 +101,7 @@ def clientes():
         cantClientes = len(tabla)-1
         head=tabla[0]
         del tabla[0]
-        return render_template('clientes.html', archlist=archlist)
+        return render_template('clientes.html', archlist=tabla)
         
 
     
