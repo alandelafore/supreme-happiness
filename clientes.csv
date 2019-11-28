@@ -1,4 +1,4 @@
-Nombre,Edad,Dirección,País,Documento,Fecha Alta,Correo Electrónico,Trabajo
+﻿Nombre,Edad,Dirección,País,Documento,Fecha Alta,Correo Electrónico,Trabajo
 Mario Olmedo Hurtado,49,Plaza Tomás Amat 83,Mauricio,5733124,2011-02-18,nevadoraquel@mir-miguel.com,Marketing executive
 Asunción Ropero Landa,6,Camino de Ángel Morell 41 Puerta 9 ,Liberia,16432378,2016-04-23,juan00@yanez.com,Industrial/product designer
 Juana Amigó-Expósito,11,Vial Daniel Núñez 9 Apt. 12 ,España,44599758,2014-02-22,fpeinado@figuerola-pages.com,"Psychologist, occupational"
@@ -99,3 +99,6 @@ Pablo Sebastian Vicens Paniagua,100,Pasadizo Joan Roldán 8 Piso 2 ,Lituania,563
 Juan Luis Crespo Montaña,20,Acceso de Alejandro Peña 96 Apt. 90 ,Eslovenia,94766989,2016-05-01,gema91@pineiro-olive.com,Community development worker
 Ignacio Pedrosa Moreno,49,Pasaje de Carla Jódar 936,Finlandia,49743291,2010-03-11,francisco-javier29@cabrero.biz,Orthoptist
 Mercedes Berenguer Mesa,82,Alameda David Conde 60,Sierra Leona,64623365,2011-06-16,lopezconcepcion@rebollo-heras.info,Financial controller
+
+
+

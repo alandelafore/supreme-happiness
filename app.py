@@ -51,7 +51,7 @@ def no_encontrado(e):
 def error_interno(e):
     return render_template('500.html'), 500
 
-
+#defino la ruta
 @app.route('/ingresar', methods=['GET', 'POST'])
 def ingresar():
     formulario = LoginForm()
@@ -94,13 +94,14 @@ def secreto():
     else:
         return render_template('sin_permiso.html')
 
+#defino ruta
 @app.route('/clientes', methods=['GET'])
 def clientes():
+    #valido log del user
     if 'username' in session:
+        # creo una tabla a partir de llamar al método ListaCSV()
         tabla = ListaCSV()
-        cantClientes = len(tabla)-1
-        head=tabla[0]
-        del tabla[0]
+        # cargo el template clientes.html enviandole como parametro la tabla
         return render_template('clientes.html', archlist=tabla)
         
 
