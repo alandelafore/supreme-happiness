@@ -1,22 +1,31 @@
 {% extends "base.html" %}
 
-{% block title %}Clientes {{ archlist }} {% endblock %}
+{% block title %}Clientes {% endblock %}
 
 {% block page_content %}
-<div> 
-    <div class="container-fluid">
-            <p>Clientes de Conesa Inc.</p>
-        <table class="table table-bordered table-condensed" >
-            <tbody>
-                {% for linea in  archlist %}
-                    <tr class="active">                
-                        {% for item in  linea %}
-                        <td >{{item}}</td>
-                        {% endfor %}
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+<div class="page-header">
+    <h2>{{ cantidad }} clientes {{totfil}} </h2p>
+    <a class="btn btn-primary" href="/altacliente" role="button">Alta nuevo cliente</a>
 </div>
+
+<div> 
+        <div class="container-fluid">
+            <table class="table table-bordered table-condensed" >
+                <tbody>
+                    <tr class="active"> 
+                        {% for item in  encabezado %}
+                            <th >{{item}}</th>
+                        {% endfor %}
+                    </tr>    
+                    {% for linea in  listacli %}
+                        <tr>                
+                            {% for item in  linea %}
+                            <td >{{item}}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
 {% endblock %}
